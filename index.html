@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="images/alurageek.webp">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="./images/AluraGeek.png" />
+    </header>
+
+    <main>
+        <section class="products-list__section">
+            <h2 class="products-list__title">Mis Productos:</h2>
+
+            <ul class="products__container" alt="Productos Alura Geek" data-list></ul>
+        </section>
+        <section class="add-product__section">
+            <h1 class="add-product__title">Agregar<br />Producto:</h1>
+            <form class="form__container" data-form>
+                <fieldset class="form__field">
+                    <input name="name" class="form__input" type="text" placeholder="nombre..." minlength="3" required
+                        data-name />
+                    <span class="error__message"></span>
+                </fieldset>
+                <fieldset class="form__field">
+                    <input name="price" class="form__input" type="number" placeholder="precio..." min="1" required
+                        data-price />
+                    <span class="error__message"></span>
+                </fieldset>
+                <fieldset class="form__field">
+                    <input name="url_image" class="form__input" type="url" placeholder="imagen..."
+                        pattern="https?://.*\.(png|jpg|webp|jpeg)" required data-url />
+                    <span class="error__message"></span>
+                </fieldset>
+
+                <div class="button__container">
+                    <button class="button button__send" type="submit" disabled>Send</button>
+                    <button class="button button__clear" type="button">Clear</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img class="header__logo" src="./images/AluraGeek.png" />
+        <p class="footer__paragraph">Desarrollado por 474N</p>
+        <span class="footer__span">Alura Latam 2024</span>
+    </footer>
+
+    <script src="./js/validateForm.js" type="module"></script>
+    <script src="./js/getProducts.js" type="module"></script>
+    <script src="./js/addProducts.js" type="module"></script>
+    <script src="js/deleteProducts.js" type="module"></script>
+</body>
+
+</html>

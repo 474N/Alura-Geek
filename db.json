@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Arcade",
+      "price": "100",
+      "image_url": "https://i.ebayimg.com/images/g/GZIAAOSwsHVhqq5e/s-l1200.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Arcade",
+      "price": "200",
+      "image_url": "https://i.ebayimg.com/images/g/GZIAAOSwsHVhqq5e/s-l1200.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Arcade",
+      "price": "300",
+      "image_url": "https://i.ebayimg.com/images/g/GZIAAOSwsHVhqq5e/s-l1200.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Arcade",
+      "price": "400",
+      "image_url": "https://i.ebayimg.com/images/g/GZIAAOSwsHVhqq5e/s-l1200.jpg"
+    }
+  ]
+}
